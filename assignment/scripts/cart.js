@@ -8,20 +8,28 @@ function addItem(item) {
     basket.push(item);
     return true;
 }
-addItem(item = "bananas");
+addItem(item = "bananas", "cherries");
+addItem(item = "oranges");
+addItem(item = "apples");
 console.log('added new item to basket', item);
 
-function listItems(basket[]) {
+function listItems(basket) {
     for (let index = 0; index < basket.length; index++) {
-        const element = basket[index];
-    return true
+        
+        console.log(basket[index]);
+
         
     }
 }
-console.log('what is in my basket', basket[]);
+console.log('what is in my basket', basket);
 
 
-
+function empty() {
+    basket.length = 0
+    return true
+}
+empty();
+console.log(basket.table);
 
 
 
